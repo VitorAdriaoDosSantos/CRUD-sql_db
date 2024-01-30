@@ -1,0 +1,27 @@
+{{#if success_msg}}
+
+<div class="alert alert-success mt-4" role="alert">
+    {{success_msg}}
+</div>
+
+<script>
+    setTimeout(() => {
+      document.querySelector('.alert-success').remove();
+    }, 4000);
+</script>
+
+
+{{/if}}
+
+{{#if error_msg}}
+
+<div class="alert alert-danger" role="alert"> 
+    {{error_msg}}
+</div>
+<script>
+    setTimeout(() => {
+      document.querySelector('.alert-danger').remove();
+    }, 4000);
+</script>
+
+{{/if}}

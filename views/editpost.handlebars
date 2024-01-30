@@ -1,0 +1,22 @@
+<h3>Editar postagem:</h3>
+
+<div class="card">
+    <div class="card-body">
+    <form action="/updatePost/{{postagem.id}}" method="post">
+    <input type="hidden" name="id" value="{{postagem.id}}">
+    <label for="titulo">Titulo:</label>
+    <input type="text" value="{{postagem.titulo}}" name="titulo" maxlength="100" id="titulo"class="form-control" required placeholder="Dige o que esta pensando, minimo de 20 caracteres">
+
+    <label for="descricao">Descrição:</label> 
+    <input type="text"value="{{postagem.descricao}}" name="descricao" maxlength="600" id="descricao"class="form-control" required placeholder="decrição curta sobre o assunto do titulo">
+
+    <label for="comentario">Texto:</label>
+    <div class="form-floating">
+         <textarea class="form-control" placeholder="Leave a comment here"  name="comentario" style="height: 150px" required>{{postagem.comentario}}</textarea>
+         <label  for="comentario">Explique o assunto do titulo detalhadamente:</label>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-2">Editar postagem</button>
+    </form>
+    </div>
+</div>

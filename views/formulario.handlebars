@@ -1,0 +1,24 @@
+<h3>Nova postagem:</h3>
+
+<div class="card">
+    <div class="card-body">
+    <form action="/Data" method="post" enctype="multipart/form-data">
+    <label for="titulo">Titulo:</label>
+    <input type="text" name="titulo" id="titulo"class="form-control" required placeholder="Dige o que esta pensando, minimo de 20 caracteres">
+
+    <label for="descricao">Descrição:</label> 
+    <input type="text" name="descricao" id="descricao"class="form-control" required placeholder="decrição curta sobre o assunto do titulo">
+
+    <label for="image">imagem:</label>
+    <input type="file" name="image" id="image" class="form-control" accept="image/png,image/jpeg"required>
+
+    <label for="comentario">Texto:</label>
+    <div class="form-floating">
+         <textarea class="form-control" placeholder="Leave a comment here" id="comentario" name="comentario" style="height: 150px" required></textarea>
+         <label>Explique o assunto do titulo detalhadamente:</label>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-2">Cadastra postagem</button>
+    </form>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+
+<h2 class="text-light mt-2">Lista de Postagens</h2>
+<hr>
+<a href="/cadastrarPost"><button class="btn btn-success">Adicionar postagem</button></a>
+
+<div class="row">
+{{#each Postagem}}
+
+ <div class="col-lg-4">
+  <div class="card mt-2">
+    <img src="{{image}}" class="card-img-top" alt="{{image}}" >
+    <div class="card-body" style="border-top: 2px solid gray ;">
+      <h5 class="card-title">{{titulo}}</h5>
+      <p class="card-text">{{descricao}}</p>
+<div class="d-flex">
+      <a href="/editpost/{{id}}"><button class="btn btn-primary">Editar</button></a>
+      &nbsp
+       <a href="/deleta/{{id}}"><button class="btn btn-danger">Deletar</button></a>
+      &nbsp
+     <a href="/viewpostweb/{{id}}"><button class="btn btn-primary">Visualizar post</button></a>
+</div>
+    </div>
+</div>
+</div>
+{{else}}
+<div class="card mt-2">
+  <div class="card-body">
+  <h4>nada encontrado!!!</h4>
+  </div>
+</div>
+{{/each}}
+</div>

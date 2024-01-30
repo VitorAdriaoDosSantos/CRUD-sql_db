@@ -1,0 +1,36 @@
+<div class="container">
+
+    <div class="card mt-2">
+        <div class="container mt-4">
+            <div class="row">
+
+                <div class="col-1 align-self-center">
+                    <img src="/{{Postagem.image}}" alt="{{Postagem.titulo}}" width="80px" height="80px"
+                        style="border-radius: 50%; border: 3px solid black;">
+                </div>
+                <h1 class="col align-self-center">{{Postagem.titulo}}</h1>
+
+                <div class="col-5 align-self-end">
+                    <small>{{Postagem.date}}</small>
+                </div>
+
+            </div>
+
+        </div>
+        <hr>
+
+        <div class="row justify-content-center" style=" border-radius: 6px">
+            <div class="col-11">
+                <div class="card ">
+                    <p class="card-body">{{Postagem.descricao}}</p>
+                </div>
+            </div>
+        </div>
+<br>
+        <img src="/{{Postagem.image}}" alt="{{Postagem.titulo}}" width="100%">
+    </div>
+    <div class="card mt-2">
+        <h4 class="card-body">{{Postagem.comentario}}</h4>
+    </div>
+
+</div>
